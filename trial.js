@@ -16,5 +16,9 @@ const response = await openai.completions.create({
     presence_penalty: 0,
 });
   document.getElementById('generated_text').innerHTML = response;
-}
+};
+
+function GeneratorTest() {
+    document.getElementById('generated_text').innerHTML = "Hello there!";
+};
 console.log(response)
