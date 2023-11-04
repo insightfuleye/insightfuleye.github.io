@@ -2,10 +2,10 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.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,
 });
 
-function GenerateText() {
+function Generator() {
 const response = await openai.completions.create({
     model: "text-davinci-003",
     prompt: "write a story incorporating the following fact: there are more grains of sand on earth than stars in the sky",
